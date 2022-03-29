@@ -1,11 +1,11 @@
 # Use an official Node runtime as the parent image
-TODO: Your code goes here
+FROM node:6.9.2
 
 # Expose the port 8000
-TODO: Your code goes here
+EXPOSE 8000
 
 # Copy the serverr.js code over
-TODO: Your code goes here
+COPY ./src/server.js .
 
 # Start the server with server.js
-TODO: Your code goes here
+CMD node server.js
